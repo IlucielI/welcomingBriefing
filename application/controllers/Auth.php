@@ -47,15 +47,15 @@ class Auth extends CI_Controller
 							redirect('Admin');
 						}
 					} else {
-						$this->session->set_flashdata('flash', 'Akun anda belum diaktivasi!');
+						$this->session->set_flashdata('flash', 'Account is Non Active!');
 						redirect('/');
 					}
 				} else {
-					$this->session->set_flashdata('flash', 'Password salah!');
+					$this->session->set_flashdata('flash', 'Wrong Password!');
 					redirect('/');
 				}
 			} else {
-				$this->session->set_flashdata('flash', 'Username salah / belum terdaftar!');
+				$this->session->set_flashdata('flash', 'Wrong Username / not registered!');
 				redirect('/');
 			}
 		}

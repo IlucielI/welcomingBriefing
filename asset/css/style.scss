@@ -11,6 +11,7 @@
 
 body {
 	font-family: "Poppins", sans-serif;
+	background-color: #00adef;
 }
 
 #Auth {
@@ -146,9 +147,9 @@ body {
 			}
 		}
 		.avatar {
-			background-image: url("../image/avatar.png");
-			width: 235px;
-			height: 224px;
+			background-image: url("../image/Mascot_Gif_02.gif");
+			width: 300px;
+			height: 234px;
 			background-repeat: no-repeat;
 			position: absolute;
 			background-size: contain;
@@ -175,8 +176,8 @@ body {
 				}
 			}
 			@media screen and (max-width: 991px) {
-				width: 215px;
-				height: 204px;
+				width: 280px;
+				height: 214px;
 				.annotation {
 					width: 315px;
 					padding: 16px 26px;
@@ -188,8 +189,8 @@ body {
 				}
 			}
 			@media screen and (max-width: 767px) {
-				width: 195px;
-				height: 184px;
+				width: 260px;
+				height: 194px;
 				.annotation {
 					width: 285px;
 					left: 160px;
@@ -204,8 +205,8 @@ body {
 				}
 			}
 			@media screen and (max-width: 575px) {
-				width: 175px;
-				height: 164px;
+				width: 240px;
+				height: 174px;
 				margin: 0;
 				.annotation {
 					left: 140px;
@@ -221,8 +222,8 @@ body {
 				}
 			}
 			@media screen and (max-width: 380px) {
-				width: 155px;
-				height: 144px;
+				width: 220px;
+				height: 154px;
 				.annotation {
 					padding: 5px 10px;
 					top: -30px;
@@ -236,11 +237,11 @@ body {
 				}
 			}
 			@media screen and (max-width: 365px) {
-				width: 115px;
-				height: 104px;
+				width: 180px;
+				height: 124px;
 				.annotation {
-					top: -50px;
-					left: 90px;
+					top: -40px;
+					left: 95px;
 				}
 				h5 {
 					font-size: 0.6rem;

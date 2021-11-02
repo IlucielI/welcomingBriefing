@@ -102,6 +102,7 @@ body {
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #00adef;
 }
 
 #Auth {
@@ -250,9 +251,9 @@ body {
 }
 
 .content .container .avatar {
-  background-image: url("../image/avatar.png");
-  width: 235px;
-  height: 224px;
+  background-image: url("../image/Mascot_Gif_02.gif");
+  width: 300px;
+  height: 234px;
   background-repeat: no-repeat;
   position: absolute;
   background-size: contain;
@@ -287,8 +288,8 @@ body {
 
 @media screen and (max-width: 991px) {
   .content .container .avatar {
-    width: 215px;
-    height: 204px;
+    width: 280px;
+    height: 214px;
   }
   .content .container .avatar .annotation {
     width: 315px;
@@ -303,8 +304,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .content .container .avatar {
-    width: 195px;
-    height: 184px;
+    width: 260px;
+    height: 194px;
   }
   .content .container .avatar .annotation {
     width: 285px;
@@ -322,8 +323,8 @@ body {
 
 @media screen and (max-width: 575px) {
   .content .container .avatar {
-    width: 175px;
-    height: 164px;
+    width: 240px;
+    height: 174px;
     margin: 0;
   }
   .content .container .avatar .annotation {
@@ -342,8 +343,8 @@ body {
 
 @media screen and (max-width: 380px) {
   .content .container .avatar {
-    width: 155px;
-    height: 144px;
+    width: 220px;
+    height: 154px;
   }
   .content .container .avatar .annotation {
     padding: 5px 10px;
@@ -360,12 +361,12 @@ body {
 
 @media screen and (max-width: 365px) {
   .content .container .avatar {
-    width: 115px;
-    height: 104px;
+    width: 180px;
+    height: 124px;
   }
   .content .container .avatar .annotation {
-    top: -50px;
-    left: 90px;
+    top: -40px;
+    left: 95px;
   }
   .content .container .avatar h5 {
     font-size: 0.6rem;

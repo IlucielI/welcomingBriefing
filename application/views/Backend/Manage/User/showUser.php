@@ -38,7 +38,7 @@
 											<input type="hidden" name="user_id" value="<?= $user['user_id']; ?>">
 											<button type="submit" class="btn btn-warning d-inline">Edit</button>
 										</form>
-										<button type="button" class="btn btn-danger btn-delete d-inline" data-toggle="modal" data-target="#deleteBackdrop" data-id="<?= $user['user_id']; ?>">Delete</button>
+										<button type="button" class="btn btn-danger btn-delete d-inline" data-toggle="modal" data-target="#deleteBackdrop" data-id="<?= $user['user_id']; ?>" data-username="<?= $user["username"]; ?>">Delete</button>
 										<button type="button" class="btn btn-primary btn-resend mt-1" data-toggle="modal" data-target="#emailBackdrop" data-id="<?= $user['user_id']; ?>">Email</button>
 									</td>
 								</tr>
@@ -54,8 +54,10 @@
 								<div class="modal-header">
 									<h5 class="modal-title text-danger" id="deleteBackdropLabel">Delete User</h5>
 								</div>
-								<div class="modal-body">
-									<h4 class="text-center text-warning">Are You Sure ?</h4>
+								<div class="modal-body text-center">
+									<h4 class="text-warning">Are You Sure ?</h4>
+									<h6 class="text-danger">Delete User</h6>
+									<h2 class="text-primary" id="usernameDelete"></h2>
 								</div>
 								<div class="modal-footer">
 									<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -173,6 +175,7 @@
 						});
 						$(".btn-delete").click(function() {
 							$("#deleteBackdrop #user_id").attr('value', $(this).data('id'));
+							$("#usernameDelete").html($(this).data('username'))
 						});
 						$(".btn-resend").click(function() {
 							$("#emailBackdrop #user_id").attr('value', $(this).data('id'));

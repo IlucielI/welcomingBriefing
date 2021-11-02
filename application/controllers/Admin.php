@@ -85,7 +85,7 @@ class Admin extends CI_Controller
 	public function resendEmailAll()
 	{
 		if ($this->input->post('emailAll')) {
-			$data = $this->User_Model->getUser();
+			$data = $this->User_Model->resendEmailAll();
 			foreach ($data as $data) {
 				$this->_sendEmail($data);
 			}
